@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { margin: 0; padding: 0; background: #0f172a; color: white; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; height: 1080px; width: 1920px; overflow: hidden; }
+        .left-panel { flex: 1; padding: 80px; display: flex; flex-direction: column; justify-content: center; }
+        .right-panel { flex: 1; padding: 80px; display: flex; flex-direction: column; justify-content: center; background: rgba(0,0,0,0.25); border-left: 2px solid rgba(255,255,255,0.05); }
+        .terminal { background: #1e1e1e; border-radius: 12px; box-shadow: 0 30px 60px rgba(0,0,0,0.6); padding: 30px; font-family: 'Courier New', monospace; font-size: 26px; color: #d4d4d4; height: 650px; overflow: hidden; position: relative; }
+        .mac-buttons { display: flex; gap: 10px; margin-bottom: 25px; }
+        .dot { width: 16px; height: 16px; border-radius: 50%; }
+        .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+        .title { font-size: 80px; font-weight: 800; margin-bottom: 25px; line-height: 1.3; background: linear-gradient(120deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; background-clip: text; color: transparent; animation: pulse 4s infinite, bgMove 8s infinite alternate;}
+        .subtitle { font-size: 45px; color: #cbd5e1; margin-bottom: 80px; font-weight: 500; }
+        .info-box { background: rgba(255,255,255,0.03); border-left: 8px solid #60a5fa; padding: 40px; font-size: 36px; border-radius: 12px; margin-bottom: 30px; line-height: 1.6; box-shadow: 0 10px 30px rgba(0,0,0,0.2);}
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
+        @keyframes bgMove { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+        .cursor { display: inline-block; width: 14px; height: 32px; background: #fff; animation: blink 1s step-end infinite; vertical-align: middle; margin-left: 4px;}
+        @keyframes blink { 50% { opacity: 0; } }
+        .typed-line { margin: 12px 0; }
+        .prompt::before { content: "pajamaboss@macbook ~ % "; color: #22c55e; font-weight: bold; }
+        .system { color: #60a5fa; padding-left: 20px;}
+        .glow { border: 2px solid rgba(167, 139, 250, 0.4); box-shadow: 0 0 40px rgba(167, 139, 250, 0.15); }
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <h2 style="color: #94a3b8; font-size: 36px; margin-bottom: 30px; letter-spacing: 2px;">● CLAUDE CODE AUTO-EXECUTION DEPLOYED</h2>
+        <div class="terminal glow">
+            <div class="mac-buttons">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+            </div>
+            <div id="terminal-content"></div>
+            <div class="typed-line prompt"><span id="typer"></span><span class="cursor"></span></div>
+        </div>
+    </div>
+    <div class="right-panel">
+        <div class="title" id="slide-title">나만의 콘텐츠 마케팅<br>오케스트라 시스템</div>
+        <div class="subtitle" id="slide-subtitle">AI 기반 완전 자동화 마스터클래스</div>
+        
+        <div class="info-box" style="animation: pulse 4s infinite reverse;">
+            💡 <b>실시간 백그라운드 작업 상태:</b><br><br>
+            - 🔍 스크립트 기반 명령어 라이브 분석 완료<br>
+            - 🤖 서브 에이전트(단원) 동기화 파이프라인 가동<br>
+            - 🎼 Claude Code 지휘자 오케스트레이션 실행 중
+        </div>
+    </div>
+
+    <script>
+        const commands = [
+            { t: "claude", d: 1200 },
+            { t: "SYS", text: "🤖 Claude Code 엔진 초기화 중...", d: 800 },
+            { t: "SYS", text: "✓ 작업 환경 분석 완료", d: 600 },
+            { t: "claude agent start --seo", d: 1500 },
+            { t: "SYS", text: "[에이전트] SEO 최적화 단원 연결...", d: 700 },
+            { t: "SYS", text: "수행 결과: 유효성 검사 통과 (100점)", d: 1200 },
+            { t: "npx mtube-orchestrator run", d: 1800 },
+            { t: "SYS", text: "지휘자 에이전트 가동 시작.", d: 800 },
+            { t: "SYS", text: ">> 모든 악기(Skill) 동기화 및 렌더링 완료.", d: 1500 },
+            { t: "clear", d: 500 }
+        ];
+
+        let termContent = document.getElementById("terminal-content");
+        let typer = document.getElementById("typer");
+        
+        async function typeText(text) {
+            for(let i=0; i<text.length; i++) {
+                typer.textContent += text[i];
+                await new Promise(r => setTimeout(r, 40 + Math.random()*60));
+            }
+        }
+
+        async function runTerminal() {
+            while(true) {
+                termContent.innerHTML = "";
+                typer.textContent = "";
+                for(let cmd of commands) {
+                    if(cmd.t === "SYS") {
+                        termContent.innerHTML += `<div class="typed-line system">${cmd.text}</div>`;
+                        await new Promise(r => setTimeout(r, cmd.d));
+                    } else if (cmd.t === "clear") {
+                        termContent.innerHTML = "";
+                        await new Promise(r => setTimeout(r, cmd.d));
+                    } else {
+                        await typeText(cmd.t);
+                        await new Promise(r => setTimeout(r, 400));
+                        termContent.innerHTML += `<div class="typed-line prompt">${cmd.t}</div>`;
+                        typer.textContent = "";
+                        await new Promise(r => setTimeout(r, cmd.d));
+                    }
+                }
+                await new Promise(r => setTimeout(r, 1000));
+            }
+        }
+
+        runTerminal();
+    </script>
+</body>
+</html>

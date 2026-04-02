@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Google API Credentials (SECURITY!)
+credentials.json
+token.json
+
+# Projects/Huge files
+production/
+node_modules/
+**node_modules/
+**/__pycache__/
+skills/execution/video_effects/
