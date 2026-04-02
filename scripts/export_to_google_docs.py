@@ -29,7 +29,7 @@ def collect_scripts():
     # 파일명 숫자에 따라 정렬 (part00, part01...)
     files.sort(key=lambda x: int(re.findall(r'\d+', x)[0]) if re.findall(r'\d+', x) else 0)
     
-    combined_content = "# AI Marketing Masterclass Full Script\n\n"
+    combined_content = "# 파자마보스 풀코스 스크립트 (전체)\n# 왕초보도 4시간이면 AI 마케팅 팀 만든다 | 클로드 코드 완전 정복\n\n"
     for filename in files:
         path = os.path.join(script_dir, filename)
         with open(path, 'r', encoding='utf-8') as f:
@@ -49,7 +49,7 @@ def upload_to_google_doc(content):
     html_content = f"<html><body>{body_content}</body></html>"
     
     file_metadata = {
-        'name': 'AI Marketing Masterclass Full Script',
+        'name': '파자마보스 풀코스 스크립트 (전체) - 2026.04.03',
         'mimeType': 'application/vnd.google-apps.document'
     }
     
