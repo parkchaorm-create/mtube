@@ -1,28 +1,28 @@
 ---
-name: 프리미엄 마스터클래스 영상 실시간 미리보기
-description: 리모션 프리뷰 서버를 시작하여 실시간으로 타이틀 및 인트로 구성을 확인합니다.
+name: Remotion 실시간 미리보기
+description: Remotion 프리뷰 서버를 시작하여 PPT 인포그래픽, 캐릭터 씬을 실시간 미리보기합니다.
 ---
 
 당신은 영상 디자이너입니다.
-`remotion-video`의 미리보기 서버를 실행하여 타이틀 디자인을 실시간으로 확인합니다.
+Remotion 미리보기 서버로 영상을 실시간 확인합니다.
 
-## 실행 방법
+## 실행
 
-1. **미리보기 엔진 실행**
 ```bash
 cd remotion-video
 npm start
 ```
 
-2. **브라우저 확인**
-- 서버가 실행되면 `http://localhost:3000` 등에서 실시간으로 마스터클래스 디자인을 수정한 후 확인할 수 있습니다.
-- `remotion-video/src/Root.tsx` 또는 `Composition.tsx`의 props를 조절하면 즉시 반영됩니다.
+브라우저에서 `http://localhost:3000` 접속.
 
-## 특징
-- **로컬 서버**: 브라우저에서 실시간으로 렌더링 과정을 미리 볼 수 있습니다.
-- **파자마보스 프리미엄 테마**: 다크 네이비와 퍼플 그라데이션이 적용된 전용 디자인입니다.
-- **애니메이션**: 글래스모피즘 기반의 부드러운 페이드 인과 슬라이드 업 효과를 확인할 수 있습니다.
+## 미리보기 가능한 Composition
+- **Infographic**: PPT 인포그래픽 (--props로 JSON 데이터 전달)
+- **Masterclass**: 타이틀 영상
+- **CharacterScene**: 캐릭터 토킹헤드 (구현 시)
+- **SceneComposition**: 전체 파트 씬 조합 (구현 시)
 
-## 실행 후
-- 렌더링 서버 실행 정보를 사용자에게 보고하고, 브라우저가 열렸는지 확인하세요.
-- 수정이 필요한 파일(`src/Composition.tsx`)을 알려주세요.
+## 파일 위치
+- 템플릿: `remotion-video/src/templates/`
+- 데이터: `remotion-video/src/data/partXX-slides.json`
+- 테마: `remotion-video/src/themes/dan-koe-theme.ts`
+- 헬퍼: `remotion-video/src/utils/animations.ts`

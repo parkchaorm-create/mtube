@@ -1,41 +1,56 @@
 ---
-name: 프리미엄 마스터클래스 영상 렌더링
-description: 리모션을 사용하여 프리미엄 마스터클래스 타이틀 및 인트로 영상을 생성합니다. 타이틀과 서브타이틀을 커스텀할 수 있습니다.
+name: PPT 인포그래픽 렌더링
+description: Remotion으로 파트별 PPT 인포그래픽 영상을 렌더링합니다. 단일 파트 또는 전체 28파트 배치 가능.
 ---
 
 당신은 비디오 프로덕션 아티스트입니다.
-`remotion-video` 프로젝트를 사용하여 고품질의 프리미엄 마스터클래스 영상을 렌더링합니다.
+`remotion-video` 프로젝트의 9종 Dan Koe 스타일 템플릿으로 PPT 인포그래픽 영상을 렌더링합니다.
 
 ## 입력 파라미터
-- `title`: 영상에 보일 메인 타이틀 (예: "AI 마케팅 자동화\n마스터클래스")
-- `subtitle`: 영상에 보일 서브타이틀 (예: "Part 00: 오케스트라의 탄생")
+- `part`: 렌더링할 파트 번호 (예: "00", "01", "all")
+- `output_dir`: 출력 폴더 (기본: `output/ppt-video/`)
 
-## 실행 방법
+## PPT JSON 데이터 위치
+- `remotion-video/src/data/part00-slides.json` ~ `part27-slides.json` (28개)
+- 9종 템플릿: title, concept, comparison, step, recap, progress, code, diagram, grid
 
-1. **의존성 설치 (필요시)**
+## 렌더링 방법
+
+### Remotion 내장 ffmpeg 호환 이슈 (macOS)
+Remotion 내장 ffmpeg가 macOS 버전과 호환되지 않을 수 있습니다.
+이 경우 프레임 단위 렌더링 후 시스템 ffmpeg로 조립합니다.
+
+### 단일 파트 렌더링
 ```bash
 cd remotion-video
-npm install
+
+# 방법 1: Remotion CLI 직접 (작동 시)
+npx remotion render Infographic \
+  --props=./src/data/part${PART}-slides.json \
+  --output=../output/ppt-video/part${PART}-ppt.mp4 \
+  --muted
+
+# 방법 2: 프레임 추출 → ffmpeg 조립 (호환 이슈 시)
+mkdir -p ../output/ppt-video/part${PART}-frames
+for frame in $(seq 0 $TOTAL_FRAMES); do
+  npx remotion still Infographic \
+    --frame=$frame \
+    --props=./src/data/part${PART}-slides.json \
+    --output=../output/ppt-video/part${PART}-frames/frame_$(printf '%04d' $frame).png
+done
+
+ffmpeg -y -framerate 30 -pattern_type glob \
+  -i "../output/ppt-video/part${PART}-frames/frame_*.png" \
+  -c:v libx264 -pix_fmt yuv420p \
+  ../output/ppt-video/part${PART}-ppt.mp4
 ```
 
-2. **영상 렌더링**
-제공된 타이틀과 서브타이틀을 props로 전달하여 렌더링을 실행합니다.
+### 전체 28파트 배치 렌더링
+파트 00~27을 순차 또는 4개 병렬로 렌더링합니다.
 
-```bash
-cd remotion-video
-npx remotion render src/index.tsx Masterclass production/video/premium_final.mp4 --props '{"title": "입력받은_타이틀", "subtitle": "입력받은_서브타이틀"}'
-```
+## 출력
+- `output/ppt-video/partXX-ppt.mp4` (파트당 20~60초)
+- 해상도: 1920x1080, 30fps
 
-- 메인 타이틀에 줄바꿈이 필요한 경우 `\n`을 사용하세요.
-- 출력 경로는 `production/video/` 폴더 내에 저장됩니다.
-
-## 파일 위치
-- 렌더링 대상: `remotion-video/src/index.tsx`
-- 컴포지션 ID: `Masterclass`
-- 출력 파일: `production/video/premium_final.mp4`
-
-## 결과 보고
-- 렌더링 성공 여부
-- 출력된 파일 경로
-- 렌더링된 메인 타이틀 및 서브타이틀 정보
-- (선택 사항) 해당 폴더의 `open` 명령어 (Mac 전용)
+## 확인
+렌더링 후 각 MP4의 duration과 파일 크기를 리포트합니다.

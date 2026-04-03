@@ -4,6 +4,9 @@
 스크립트 내용과는 별개이며, 제작팀(우리)이 따르는 규칙입니다.
 
 **디자인 레퍼런스**: [`contexts/design-references/dan-koe-style-guide.md`](contexts/design-references/dan-koe-style-guide.md)
+**영상 빌드 워크플로우**: `.claude/commands/remotion-build-guide.md` (9-Phase 체계)
+**TTS Voice ID**: `jPmzMeQjhjbwvw4O8bgf` (절대 변경 금지)
+**캐릭터**: 빨간 안경 흑백 3D (hybrid_v1), 하이브리드 표시 (HOOK=풀, CONCEPT=PIP, DEMO=숨김)
 
 ---
 
