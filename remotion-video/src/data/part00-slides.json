@@ -1,0 +1,89 @@
+{
+  "partId": "part00",
+  "title": "오케스트라의 탄생",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 00",
+        "title": "오케스트라의 탄생"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "⌨️",
+        "keyword": "명령어 딱 한 줄",
+        "description": "결과물이 폭포처럼 쏟아지는 AI 자동화의 시작",
+        "accentWord": "한 줄"
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 1,
+        "acts": [
+          { "label": "1막: 공연장 세팅", "duration": "1시간" },
+          { "label": "2막: 악보 읽기", "duration": "1시간" },
+          { "label": "3막: 악기 만들기", "duration": "1시간 30분" },
+          { "label": "4막: 오케스트라 합주", "duration": "1시간 30분" }
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "불필요",
+        "rightTitle": "필수",
+        "leftItems": [
+          "코딩 지식",
+          "개발 경험",
+          "영어 실력"
+        ],
+        "rightItems": [
+          "컴퓨터 (맥/윈도우)",
+          "Claude Pro 계정",
+          "안티그래비티"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "준비물 체크리스트",
+        "steps": [
+          {
+            "title": "컴퓨터 (맥 또는 윈도우)",
+            "description": "어떤 컴퓨터든 상관없습니다"
+          },
+          {
+            "title": "Claude Pro 계정",
+            "description": "Claude Code 사용을 위한 구독"
+          },
+          {
+            "title": "안티그래비티",
+            "description": "Claude Code 전용 작업 도구"
+          }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "핵심 정리",
+        "items": [
+          "이 영상 하나로 '나만의 콘텐츠 마케팅 오케스트라' 완성",
+          "Claude Code 중심, 비싼 마케팅 툴 필요 없음",
+          "준비물: 컴퓨터 + Claude Pro 계정 + 안티그래비티"
+        ]
+      }
+    }
+  ]
+}
