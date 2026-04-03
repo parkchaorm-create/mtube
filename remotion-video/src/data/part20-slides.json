@@ -1,0 +1,75 @@
+{
+  "partId": "part20",
+  "title": "풀 데모 – 전체 오케스트라 라이브 공연",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 20",
+        "title": "풀 데모 – 전체 오케스트라 라이브 공연"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "전체 파이프라인 실행 순서",
+        "nodes": [
+          { "label": "서곡: 플래너 기획", "icon": "📋" },
+          { "label": "1악장: 리서치", "icon": "🔍" },
+          { "label": "2악장: 콘텐츠", "icon": "✍️" },
+          { "label": "3악장: SEO", "icon": "📊" },
+          { "label": "4악장: 비주얼+쇼츠+리모션", "icon": "🎨" },
+          { "label": "5악장: 배포", "icon": "📤" },
+          { "label": "앙코르: QA 검수", "icon": "🔎" }
+        ],
+        "direction": "vertical",
+        "accentIndex": 4
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 4,
+        "heading": "16개 결과물 (12분 완성)",
+        "items": [
+          { "icon": "📝", "title": "블로그", "description": "1,800자" },
+          { "icon": "📸", "title": "인스타 2개", "description": "캡션+CTA" },
+          { "icon": "📧", "title": "뉴스레터", "description": "634자" },
+          { "icon": "🐦", "title": "X 스레드", "description": "트윗 형식" },
+          { "icon": "🖼️", "title": "카드뉴스", "description": "5장" },
+          { "icon": "🎯", "title": "썸네일", "description": "1장" },
+          { "icon": "🎬", "title": "쇼츠", "description": "3개" },
+          { "icon": "📊", "title": "인포그래픽", "description": "영상 1개" }
+        ]
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 5,
+        "acts": [
+          { "label": "ACT 1 공연장 세팅", "duration": "✅" },
+          { "label": "ACT 2 악보 마스터", "duration": "✅" },
+          { "label": "ACT 3 악기 제작", "duration": "✅" },
+          { "label": "ACT 4 오케스트라 합주", "duration": "✅" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "풀 데모 핵심 정리",
+        "items": [
+          "/marketing-team [URL] 한 줄로 텍스트 5개 + 이미지 6장 + 영상 4개 + 검수 보고서 = 16개 결과물",
+          "리뷰어(QA)가 최종 검수까지 — 만드는 팀과 검수 팀 분리로 품질 보장",
+          "ACT 1~4 전부 완주, 핵심 시스템 완성!"
+        ]
+      }
+    }
+  ]
+}

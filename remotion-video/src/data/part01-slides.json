@@ -1,0 +1,126 @@
+{
+  "partId": "part01",
+  "title": "클로드 코드란? + 요금제 완벽 정리",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 01",
+        "title": "클로드 코드란? + 요금제 완벽 정리"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "ChatGPT (음악 이론 선생님)",
+        "rightTitle": "Claude Code (실전 악단)",
+        "leftItems": [
+          "질문 → 텍스트 답변",
+          "설명만 해줌",
+          "\"이렇게 하세요\""
+        ],
+        "rightItems": [
+          "시키면 → 직접 파일 생성",
+          "실행까지 해줌",
+          "스캔 → 보고서 저장"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "Claude Code 활용법 10가지",
+        "columns": 3,
+        "items": [
+          { "icon": "📱", "title": "소셜미디어 자동화" },
+          { "icon": "📧", "title": "뉴스레터 작성" },
+          { "icon": "🎬", "title": "영상 스크립트" },
+          { "icon": "🔍", "title": "SEO/GEO 감사" },
+          { "icon": "📊", "title": "GA4 데이터 분석" },
+          { "icon": "🏢", "title": "경쟁사 분석" },
+          { "icon": "🤖", "title": "멀티 에이전트 팀" },
+          { "icon": "⚙️", "title": "자동화 트리거" },
+          { "icon": "✉️", "title": "이메일 자동화" },
+          { "icon": "🌐", "title": "랜딩페이지 최적화" }
+        ]
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📈",
+        "keyword": "한국 성장률 세계 1위",
+        "description": "최근 4개월간 주간 활성 사용자 6배 성장, 지금이 진입 타이밍",
+        "accentWord": "6배"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "Free (견학만)",
+        "rightTitle": "Pro $20/월 (소극장 대관)",
+        "leftItems": [
+          "무료",
+          "Claude Code 사용 불가",
+          "무대에 올라갈 수 없음"
+        ],
+        "rightItems": [
+          "월 ~3만원",
+          "Claude Code 전체 기능",
+          "왕초보 추천 플랜"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🚕",
+        "keyword": "토큰 = 택시 미터기",
+        "description": "대화가 길어질수록 미터기가 올라감, Pro는 하루 한도 있음",
+        "accentWord": "택시 미터기",
+        "analogy": "짧은 대화 = 단거리 요금 / 긴 대화 = 장거리 요금"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "토큰 절약 꿀팁 3가지",
+        "steps": [
+          {
+            "title": "/clear로 대화 초기화",
+            "description": "미터기를 리셋하는 것"
+          },
+          {
+            "title": "작업별 새 세션 시작",
+            "description": "새 택시 타기"
+          },
+          {
+            "title": "가벼운 작업은 Haiku 모델",
+            "description": "경차 택시로 기본료 절약"
+          }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "핵심 정리",
+        "items": [
+          "Claude Code = 직접 연주해주는 악단 (설명만 하는 선생님 아님)",
+          "왕초보는 Pro 플랜 월 3만 원으로 시작",
+          "토큰 = 택시 미터기, /clear로 리셋 가능"
+        ]
+      }
+    }
+  ]
+}

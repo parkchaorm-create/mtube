@@ -1,0 +1,50 @@
+{
+  "partId": "part23",
+  "title": "무인 배포 – 9개 SNS에 동시 발행하기",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 23",
+        "title": "무인 배포 – 9개 SNS에 동시 발행하기"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "쉬운 경로",
+        "rightTitle": "직접 경로",
+        "leftItems": ["Blotato / Buffer 사용", "9개 채널 동시 게시", "API 키 하나면 끝", "추천!"],
+        "rightItems": ["YouTube API + Meta API", "완전 자동화 가능", "설정이 복잡", "개발자 향"],
+        "accentSide": "left"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "슬롯 기반 스케줄링",
+        "steps": [
+          { "title": "인스타그램", "description": "매일 오전 9시 → 슬롯 1개/일" },
+          { "title": "트위터", "description": "하루 3회 → 슬롯 3개/일" },
+          { "title": "블로그", "description": "주 1회 → 슬롯 1개/주" },
+          { "title": "자동 배치", "description": "콘텐츠를 만들면 다음 빈 슬롯에 자동 배치!" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "무인 배포 핵심 정리",
+        "items": [
+          "Blotato로 9개 SNS에 동시 발행 — API 키 하나면 끝",
+          "슬롯 스케줄링으로 콘텐츠를 만들면 다음 빈 시간에 자동 배치",
+          "발행 전 초안 확인 → 승인 → 발행, 사고 방지까지 완벽"
+        ]
+      }
+    }
+  ]
+}

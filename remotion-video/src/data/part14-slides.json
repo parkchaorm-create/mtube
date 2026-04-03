@@ -1,0 +1,105 @@
+{
+  "partId": "part14",
+  "title": "4막 시작 – 독주에서 오케스트라로",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 14",
+        "title": "4막 시작 – 독주에서 오케스트라로"
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 4,
+        "acts": [
+          { "label": "ACT 1 공연장 세팅", "duration": "✅" },
+          { "label": "ACT 2 악보 마스터", "duration": "✅" },
+          { "label": "ACT 3 악기 제작", "duration": "✅" },
+          { "label": "ACT 4 오케스트라 합주", "duration": "← NOW" }
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "스킬 (악기)",
+        "rightTitle": "에이전트 (단원)",
+        "leftItems": [
+          "바이올린, 첼로 같은 도구",
+          "누구든 집어 들고 연주 가능",
+          "공유 플레이북"
+        ],
+        "rightItems": [
+          "전문 연주자",
+          "상황을 판단해서 스스로 결정",
+          "자기 역할과 전문성 보유"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "👥",
+        "keyword": "플래너 + 리뷰어 2인 체제",
+        "description": "만드는 AI와 검수하는 AI를 분리해야 품질이 올라갑니다",
+        "accentWord": "2인 체제"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "독주",
+        "rightTitle": "오케스트라",
+        "leftItems": [
+          "1 AI → 모든 작업",
+          "컨텍스트 포화",
+          "품질 저하"
+        ],
+        "rightItems": [
+          "전문 단원 역할 분담",
+          "각자 집중",
+          "퀄리티 UP"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "우리가 만들 오케스트라 편성표",
+        "nodes": [
+          { "label": "지휘자 (오케스트레이터)", "icon": "🎼" },
+          { "label": "플래너 (기획)", "icon": "📋" },
+          { "label": "리서치 단원", "icon": "🔍" },
+          { "label": "콘텐츠 단원", "icon": "✍️" },
+          { "label": "SEO 단원", "icon": "📊" },
+          { "label": "배포 단원", "icon": "📤" },
+          { "label": "리뷰어 (QA)", "icon": "🔎" }
+        ],
+        "direction": "vertical",
+        "accentIndex": 0
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "4막 시작 핵심 정리",
+        "items": [
+          "에이전트 = 판단이 필요한 전문 단원, 스킬 = 반복 실행하는 악기",
+          "플래너(기획) + 리뷰어(QA) 2인 체제가 품질을 보장",
+          "context 폴더에 브랜드 정보를 먼저 넣어야 에이전트가 제대로 작동"
+        ]
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@ export interface ConceptSlideProps {
   keyword: string;
   description: string;
   accentWord?: string;
+  analogy?: string;
 }
 
 export const ConceptSlide: React.FC<ConceptSlideProps> = ({
@@ -14,6 +15,7 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
   keyword,
   description,
   accentWord,
+  analogy,
 }) => {
   const frame = useCurrentFrame();
 
@@ -69,7 +71,7 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
           opacity,
           transform: `translateY(${slideUp}px)`,
           fontFamily: theme.fonts.title,
-          fontSize: theme.fontSizes.hero,
+          fontSize: Math.max(28, theme.fontSizes.hero),
           fontWeight: theme.fontWeights.extraBold,
           color: theme.colors.text,
           textAlign: 'center',
@@ -84,7 +86,7 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
         style={{
           opacity: descOpacity,
           fontFamily: theme.fonts.body,
-          fontSize: theme.fontSizes.subtitle,
+          fontSize: Math.max(28, theme.fontSizes.subtitle),
           fontWeight: theme.fontWeights.regular,
           color: theme.colors.muted,
           textAlign: 'center',
@@ -95,6 +97,26 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
       >
         {description}
       </p>
+
+      {analogy && (
+        <p
+          style={{
+            opacity: interpolate(frame, [25, 50], [0, 1], {
+              extrapolateRight: 'clamp',
+            }),
+            fontFamily: theme.fonts.body,
+            fontSize: Math.max(28, theme.fontSizes.body),
+            fontWeight: theme.fontWeights.medium,
+            color: theme.colors.accent,
+            textAlign: 'center',
+            margin: 0,
+            marginTop: theme.spacing.gap / 2,
+            maxWidth: 900,
+          }}
+        >
+          = {analogy}
+        </p>
+      )}
     </AbsoluteFill>
   );
 };

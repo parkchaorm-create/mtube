@@ -1,0 +1,58 @@
+{
+  "partId": "part24",
+  "title": "GitHub Actions – 매주 월요일 자동으로 공연장이 열린다",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 24",
+        "title": "GitHub Actions – 매주 월요일 자동으로 공연장이 열린다"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📸",
+        "keyword": "Git 기초 — 딱 두 개만",
+        "description": "commit = 작업 내용을 사진 찍어 저장, push = 저장한 사진을 클라우드(GitHub)에 업로드",
+        "accentWord": "두 개만"
+      }
+    },
+    {
+      "type": "code",
+      "durationInFrames": 150,
+      "props": {
+        "language": "yaml",
+        "code": "name: 주간 콘텐츠 자동 생성\non:\n  schedule:\n    - cron: '0 0 * * 1'  # 매주 월요일\n  workflow_dispatch:       # 수동 실행\njobs:\n  create-content:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - name: Claude Code 실행\n        run: npx @anthropic-ai/claude-code --print ...",
+        "caption": "YAML 파일 하나로 매주 자동 실행 — 무료!"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "GitHub Secrets로 API 키 안전 저장",
+        "steps": [
+          { "title": "Settings 진입", "description": "GitHub 레포지토리 → Settings" },
+          { "title": "Secrets 추가", "description": "Secrets and variables → Actions → New secret" },
+          { "title": "ANTHROPIC_API_KEY", "description": "Claude API 키 저장" },
+          { "title": "BLOTATO_API_KEY", "description": "Blotato API 키 저장" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "GitHub Actions 핵심 정리",
+        "items": [
+          "Git은 commit(사진 찍기)과 push(업로드)만 알면 충분",
+          "YAML 파일 하나로 매주 자동 실행 — 무료",
+          "API 키는 GitHub Secrets에 — 금고에 넣어두고 자동으로 꺼내쓰기"
+        ]
+      }
+    }
+  ]
+}

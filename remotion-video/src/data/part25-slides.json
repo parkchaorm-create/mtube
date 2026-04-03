@@ -1,0 +1,72 @@
+{
+  "partId": "part25",
+  "title": "Karpathy 자기 개선 루프 – AI 지휘자가 스스로 실력을 키운다",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 25",
+        "title": "Karpathy 자기 개선 루프 – AI 지휘자가 스스로 실력을 키운다"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "Karpathy 자기 개선 루프",
+        "nodes": [
+          { "label": "콘텐츠 발행", "icon": "📤" },
+          { "label": "24h 후 조회수 수집", "icon": "📊" },
+          { "label": "이진 Eval 채점", "icon": "✅" },
+          { "label": "승리 패턴 발견", "icon": "🏆" },
+          { "label": "프롬프트 자동 개선", "icon": "🔧" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 4
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 2,
+        "heading": "이진 Eval 10개 질문 (Yes/No)",
+        "items": [
+          { "title": "훅이 결과/변화를 묘사하는가?" },
+          { "title": "훅에 사람이나 이야기가 등장하는가?" },
+          { "title": "쇼츠가 '할 수 있는 것' 프레임인가?" },
+          { "title": "보도자료 톤을 피했는가?" },
+          { "title": "첫 프레임이 스크롤을 멈추게 하는가?" },
+          { "title": "CTA가 자연스럽게 녹아 있는가?" },
+          { "title": "구체적 숫자/데이터가 포함돼 있는가?" },
+          { "title": "타깃 독자의 고통점을 건드리는가?" },
+          { "title": "3초 안에 핵심 가치가 전달되는가?" },
+          { "title": "공유하고 싶은 충동이 드는가?" }
+        ]
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📓",
+        "keyword": "리서치 로그 = 가장 가치 있는 자산",
+        "description": "모든 변경사항이 데이터와 함께 기록되고, 새 AI 모델에 인수인계 가능",
+        "accentWord": "자산"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "Karpathy 루프 핵심 정리",
+        "items": [
+          "이진 Eval 10개 질문으로 감이 아닌 데이터로 콘텐츠 채점",
+          "실제 조회수와 비교해서 프롬프트를 매일 자동 개선",
+          "리서치 로그가 가장 가치 있는 자산 — 모든 진화가 기록으로 남음"
+        ]
+      }
+    }
+  ]
+}

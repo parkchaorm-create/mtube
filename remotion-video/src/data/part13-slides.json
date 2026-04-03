@@ -1,0 +1,87 @@
+{
+  "partId": "part13",
+  "title": "허브 콘텐츠 엔진 – 교향곡을 여러 공연장에서",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 13",
+        "title": "허브 콘텐츠 엔진 – 교향곡을 여러 공연장에서"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "허브 콘텐츠 엔진 구조",
+        "nodes": [
+          { "label": "유튜브 롱폼 (원곡)", "icon": "🎬" },
+          { "label": "뉴스레터", "icon": "📧" },
+          { "label": "블로그 아티클", "icon": "📝" },
+          { "label": "인스타 캐러셀", "icon": "📱" },
+          { "label": "쇼츠/릴스", "icon": "🎞️" },
+          { "label": "X 스레드", "icon": "🐦" },
+          { "label": "링크드인", "icon": "💼" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 0
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "주간 콘텐츠 사이클",
+        "steps": [
+          { "title": "월요일", "description": "아웃라이어 리서치 → 주제 선정" },
+          { "title": "화~수요일", "description": "유튜브 스크립트 작성" },
+          { "title": "목요일", "description": "촬영 + 편집" },
+          { "title": "금요일", "description": "유튜브 업로드 + 파생 콘텐츠 일괄 생성" },
+          { "title": "토~일요일", "description": "뉴스레터/아티클 발행" }
+        ]
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 2,
+        "acts": [
+          { "label": "ACT 1: 공연장 세팅", "duration": "Part 01~04 ✅" },
+          { "label": "ACT 2: 악기 제작", "duration": "Part 05~13 ✅" },
+          { "label": "ACT 3: 오케스트라 합주", "duration": "Part 14~18" }
+        ]
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 4,
+        "heading": "ACT 2 완료 건강검진 — .claude/commands/ 체크리스트",
+        "items": [
+          { "icon": "🎻", "title": "social-media.md", "description": "바이올린" },
+          { "icon": "🎹", "title": "brand-voice.md", "description": "피아노" },
+          { "icon": "🎻", "title": "repurpose.md", "description": "첼로" },
+          { "icon": "🎺", "title": "seo-audit.md", "description": "트럼펫" },
+          { "icon": "🥁", "title": "ga4.md", "description": "드럼" },
+          { "icon": "🔍", "title": "outlier-research.md", "description": "탐지기" },
+          { "icon": "📅", "title": "plan-week.md", "description": "허브 엔진" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "허브 콘텐츠 엔진 핵심 정리",
+        "items": [
+          "유튜브 롱폼이 원곡 — 나머지 채널은 편곡으로 파생",
+          "/plan-week으로 매주 월요일에 실행하면 한 주 콘텐츠 자동 기획",
+          "ACT 2에서 만든 7개 악기가 전부 연결되는 시스템"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "partId": "part17",
+  "title": "비주얼 마케팅 팀 – 카드뉴스와 썸네일까지 자동 생성",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 17",
+        "title": "비주얼 마케팅 팀 – 카드뉴스와 썸네일 자동 생성"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🎨",
+        "keyword": "비주얼 마케팅 팀",
+        "description": "나노바나 MCP + 제미나이 3.0 프로로 카드뉴스와 썸네일을 자동 생성합니다",
+        "accentWord": "나노바나",
+        "analogy": "오케스트라의 무대 미술팀"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "비주얼 팀 세팅 3단계",
+        "steps": [
+          { "title": "API 키 발급", "description": "Google AI Studio에서 무료로 발급 (주문 전화번호)" },
+          { "title": "MCP 연결", "description": ".mcp.json 파일로 나노바나 MCP 연결 (케이블 연결)" },
+          { "title": "비주얼 스킬 생성", "description": "카드뉴스 5장 + 유튜브 썸네일 자동 생성 스킬" }
+        ]
+      }
+    },
+    {
+      "type": "code",
+      "durationInFrames": 150,
+      "props": {
+        "language": "json",
+        "code": "{\n  \"mcpServers\": {\n    \"nanobanana\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"@anthropic-ai/nanobanana-mcp\"],\n      \"env\": {\n        \"GEMINI_API_KEY\": \"your-api-key\"\n      }\n    }\n  }\n}",
+        "caption": ".mcp.json 설정 파일"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "비주얼 마케팅 팀 핵심 정리",
+        "items": [
+          "Google AI Studio에서 API 키 발급 (무료)",
+          ".mcp.json으로 나노바나 MCP 연결",
+          "비주얼 스킬로 카드뉴스 5장 + 썸네일 자동 생성"
+        ]
+      }
+    }
+  ]
+}

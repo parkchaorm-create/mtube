@@ -1,0 +1,68 @@
+{
+  "partId": "part15",
+  "title": "단원 배치 – 전문 에이전트 설계하기",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 15",
+        "title": "단원 배치 – 전문 에이전트 설계하기"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "단원 오디션: RSA 원칙",
+        "steps": [
+          { "title": "R (Role)", "description": "너 누구야? → \"SEO 전문가, 10년 경력\"" },
+          { "title": "S (Skills)", "description": "뭘 할 수 있어? → \"키워드 분석, 메타 태그 최적화\"" },
+          { "title": "A (Actions)", "description": "뭘 해야 해? → \"콘텐츠 SEO 최적화, 메타 태그 생성\"" }
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "단원 대기실 폴더 구조",
+        "nodes": [
+          { "label": ".claude/", "icon": "📁" },
+          { "label": "commands/ (악기 보관함)", "icon": "🎻" },
+          { "label": "agents/ (단원 대기실)", "icon": "👥" }
+        ],
+        "direction": "vertical",
+        "accentIndex": 2
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "6명의 전문 단원",
+        "items": [
+          { "icon": "📋", "title": "플래너", "description": "기획 담당" },
+          { "icon": "🔍", "title": "리서치", "description": "조사·분석" },
+          { "icon": "✍️", "title": "콘텐츠", "description": "글쓰기" },
+          { "icon": "📊", "title": "SEO", "description": "검색 최적화" },
+          { "icon": "📤", "title": "배포", "description": "발행·스케줄" },
+          { "icon": "🔎", "title": "리뷰어", "description": "품질 검수" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "단원 배치 핵심 정리",
+        "items": [
+          "RSA 원칙: Role(누구) + Skills(능력) + Actions(행동)으로 설계",
+          ".claude/agents/ 대기실에 6명 배치 완료",
+          "플래너가 시작, 리뷰어가 마무리하는 2인 체제가 핵심"
+        ]
+      }
+    }
+  ]
+}

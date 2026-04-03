@@ -1,0 +1,64 @@
+{
+  "partId": "part22",
+  "title": "NotebookLM 연동 – AI에게 영구 기억장치를 달다",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 22",
+        "title": "NotebookLM 연동 – AI에게 영구 기억장치를 달다"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "NotebookLM이 해결하는 3가지",
+        "steps": [
+          { "title": "영구 기억", "description": "결정사항, 맥락이 세션을 넘어 유지" },
+          { "title": "토큰 절약", "description": "매번 전체 맥락 로딩 불필요, 필요한 것만 가져옴 (RAG)" },
+          { "title": "새로운 능력", "description": "딥리서치, 인포그래픽, 팟캐스트 자동 생성" }
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "Wrap-up 스킬 흐름",
+        "nodes": [
+          { "label": "세션 작업", "icon": "💻" },
+          { "label": "/wrap-up 실행", "icon": "📋" },
+          { "label": "핵심 내용 자동 정리", "icon": "📝" },
+          { "label": "NotebookLM 저장", "icon": "📚" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 3
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🔄",
+        "keyword": "지식 선순환 루프",
+        "description": "제작 → 기억 → 강화 → 더 나은 제작 → 더 풍부한 기억",
+        "accentWord": "선순환",
+        "analogy": "쓸수록 똑똑해지는 시스템"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "NotebookLM 연동 핵심 정리",
+        "items": [
+          "NotebookLM = AI의 영구 도서관, 세션이 끝나도 기억 유지",
+          "Wrap-up 스킬로 세션 끝날 때마다 자동 저장, 선순환 루프",
+          "RAG 방식으로 필요한 정보만 가져와 토큰 절약"
+        ]
+      }
+    }
+  ]
+}

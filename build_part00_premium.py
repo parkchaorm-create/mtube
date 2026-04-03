@@ -4,13 +4,16 @@ import re
 import subprocess
 import json
 import imageio_ffmpeg
+from dotenv import load_dotenv
 from playwright.async_api import async_playwright
 from elevenlabs.client import ElevenLabs
 
-# ElevenLabs 설정 
-API_KEY = "sk_2e56dd1f5893dd5eb985bb50ea5d9b9ce6c8758b404e5fa0"
-VOICE_ID = "jPmzMeQjhjbwvw4O8bgf" # 보스님이 지정하신 Voice ID
-MODEL_ID = "eleven_multilingual_v2" 
+load_dotenv()
+
+# ElevenLabs 설정 (.env에서 로드)
+API_KEY = os.getenv("ELEVENLABS_API_KEY")
+VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID", "jPmzMeQjhjbwvw4O8bgf")
+MODEL_ID = os.getenv("ELEVENLABS_MODEL_ID", "eleven_multilingual_v2")
 
 client = ElevenLabs(api_key=API_KEY)
 FFMPEG = imageio_ffmpeg.get_ffmpeg_exe()

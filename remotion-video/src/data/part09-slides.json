@@ -1,0 +1,56 @@
+{
+  "partId": "part09",
+  "title": "리퍼포징 스킬 – URL 하나로 7중주",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 09",
+        "title": "리퍼포징 스킬 – URL 하나로 7중주"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "1개 콘텐츠 → 7개 채널 동시 배포",
+        "nodes": [
+          { "label": "원본 URL", "icon": "🔗" },
+          { "label": "인스타 캐러셀", "icon": "📱" },
+          { "label": "인스타 포스트", "icon": "📸" },
+          { "label": "쇼츠 스크립트", "icon": "🎬" },
+          { "label": "블로그", "icon": "📝" },
+          { "label": "뉴스레터", "icon": "📧" },
+          { "label": "X 스레드", "icon": "🐦" },
+          { "label": "링크드인", "icon": "💼" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 0
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "수동 제작",
+        "rightTitle": "리퍼포징 스킬",
+        "leftItems": ["7개 채널 × 개별 작성", "4~5시간 소요", "채널마다 톤이 다름"],
+        "rightItems": ["/repurpose URL 한 줄", "5분 소요", "브랜드 보이스 통일"],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "리퍼포징(첼로) 핵심 정리",
+        "items": [
+          "리퍼포징은 하나의 URL로 7가지 채널 콘텐츠를 동시에 생성",
+          "/repurpose [URL]로 실행 — 5분이면 7중주 완성",
+          "결과물 피드백을 스킬 파일에 반영하면 점점 더 좋은 연주"
+        ]
+      }
+    }
+  ]
+}

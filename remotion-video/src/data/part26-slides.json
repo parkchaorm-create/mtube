@@ -1,0 +1,51 @@
+{
+  "partId": "part26",
+  "title": "데이터 자산화 + 한국형 플랫폼 연결",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 26",
+        "title": "데이터 자산화 + 한국형 플랫폼 연결"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "데이터 자산화 3단계",
+        "steps": [
+          { "title": "/wrap-up 갈무리", "description": "매 세션 핵심 내용을 자동 정리 + NotebookLM 저장" },
+          { "title": "리서치 로그", "description": "자기 개선 루프의 모든 진화 기록" },
+          { "title": "콘텐츠 아카이브", "description": "발행된 모든 콘텐츠 + 성과 데이터" }
+        ]
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "한국형 플랫폼 확장",
+        "items": [
+          { "icon": "💬", "title": "카카오 채널", "description": "친구 추가 → 자동 콘텐츠 발송" },
+          { "icon": "📰", "title": "네이버 프리미엄콘텐츠", "description": "유료 구독 콘텐츠 발행" },
+          { "icon": "📂", "title": "기업용 위키", "description": "Notion/Confluence 사내 지식 자동 정리" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "데이터 자산화 + 한국형 연결 핵심 정리",
+        "items": [
+          "갈무리 데이터 → 노하우 DB, 리서치 로그, 콘텐츠 아카이브 3가지 자산",
+          "카카오 채널, 네이버 프리미엄콘텐츠로 한국 시장 공략",
+          "스킬 파일 하나씩 추가하면 끝 — 이미 아는 방법"
+        ]
+      }
+    }
+  ]
+}

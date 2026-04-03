@@ -1,0 +1,63 @@
+{
+  "partId": "part12",
+  "title": "아웃라이어 리서치 – 터지는 콘텐츠 탐지기",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 12",
+        "title": "아웃라이어 리서치 – 터지는 콘텐츠 탐지기"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📊",
+        "keyword": "아웃라이어 스코어 공식",
+        "description": "(48h 조회수 / 채널 평균 조회수) × 100 — 200 이상이면 아웃라이어!",
+        "accentWord": "200+"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "아웃라이어 스코어 해석",
+        "items": [
+          { "icon": "😐", "title": "100점", "description": "평균 수준 (보통)" },
+          { "icon": "👀", "title": "150점", "description": "평균보다 1.5배 (주목)" },
+          { "icon": "🔥", "title": "200+점", "description": "아웃라이어! (분석 대상)" }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "프리스코어링 게이트 (10점 만점)",
+        "steps": [
+          { "title": "아웃라이어 스코어 200+", "description": "2점" },
+          { "title": "내 전문 분야와 관련", "description": "2점" },
+          { "title": "내 타겟 고객이 관심 가질 주제", "description": "2점" },
+          { "title": "차별화 가능 (내 관점 추가)", "description": "2점" },
+          { "title": "검색 수요 있음 (SEO/GEO)", "description": "2점 — 합계 5점 이상 → 제작 큐" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "아웃라이어 리서치 핵심 정리",
+        "items": [
+          "아웃라이어 스코어 = (48h 조회수 / 채널 평균) × 100 — 200 이상이면 분석 대상",
+          "구독자 5만 이하 소규모 채널 먼저 탐색 — 콘텐츠 자체의 힘으로 터진 영상",
+          "프리스코어링 게이트 5점 이상만 제작 큐에 등록"
+        ]
+      }
+    }
+  ]
+}

@@ -7,9 +7,11 @@ import { ComparisonSlide } from './ComparisonSlide';
 import { StepSlide } from './StepSlide';
 import { RecapSlide } from './RecapSlide';
 import { CodeSlide } from './CodeSlide';
+import { DiagramSlide } from './DiagramSlide';
+import { GridSlide } from './GridSlide';
 
 export interface SlideData {
-  type: 'title' | 'concept' | 'progress' | 'comparison' | 'step' | 'recap' | 'code';
+  type: 'title' | 'concept' | 'progress' | 'comparison' | 'step' | 'recap' | 'code' | 'diagram' | 'grid';
   durationInFrames: number;
   props: Record<string, unknown>;
 }
@@ -34,6 +36,10 @@ const SlideRenderer: React.FC<{ slide: SlideData }> = ({ slide }) => {
       return <RecapSlide {...(slide.props as any)} />;
     case 'code':
       return <CodeSlide {...(slide.props as any)} />;
+    case 'diagram':
+      return <DiagramSlide {...(slide.props as any)} />;
+    case 'grid':
+      return <GridSlide {...(slide.props as any)} />;
     default:
       return null;
   }

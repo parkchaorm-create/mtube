@@ -1,0 +1,81 @@
+{
+  "partId": "part27",
+  "title": "앙코르 – 전체 복기, 7일 액션 플랜, 수익화 로드맵",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 27",
+        "title": "앙코르 – 전체 복기, 7일 액션 플랜, 수익화 로드맵"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 2,
+        "heading": "전체 여정 복기",
+        "items": [
+          { "icon": "🎪", "title": "ACT 1 — 무대 세팅", "description": "안티그래비티, Node.js, Claude Code 설치" },
+          { "icon": "🎻", "title": "ACT 2 — 악기 제작", "description": "5가지 스킬 + 브랜드 보이스" },
+          { "icon": "🎼", "title": "ACT 3 — 오케스트라 합주", "description": "에이전트 4명 + 지휘자 + Hooks" },
+          { "icon": "🚀", "title": "ACT 4 — 보너스", "description": "하네스, 영구 기억, 무인 배포, 자기 개선" }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "7일 액션 플랜",
+        "steps": [
+          { "title": "Day 1 (월)", "description": "환경 점검 & 첫 콘텐츠 발행" },
+          { "title": "Day 2 (화)", "description": "리퍼포징 독주 — /repurpose로 7채널 변환" },
+          { "title": "Day 3 (수)", "description": "SEO 건강검진 — /seo-audit 점검" },
+          { "title": "Day 4 (목)", "description": "브랜드 보이스 추출 — /brand-voice" },
+          { "title": "Day 5 (금)", "description": "첫 오케스트라 합주 — /marketing-team" },
+          { "title": "Day 6 (토)", "description": "Hooks & GitHub Actions 자동화 설정" },
+          { "title": "Day 7 (일)", "description": "복기 & 다음 주 콘텐츠 주제 선정" }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "수익화 3단계 로드맵",
+        "steps": [
+          { "title": "1단계: 시간 절약", "description": "매주 4~5시간 → 30분 (월 0~100만 원 절감)" },
+          { "title": "2단계: 콘텐츠 폭발", "description": "트래픽 → 광고/제휴/판매 (월 100~500만 원)" },
+          { "title": "3단계: 시스템 상품화", "description": "컨설팅, 디지털 상품, 구독 모델 (월 500만 원+)" }
+        ]
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 4,
+        "acts": [
+          { "label": "ACT 1: 무대 세팅", "duration": "Part 01~04" },
+          { "label": "ACT 2: 악기 제작", "duration": "Part 05~08" },
+          { "label": "ACT 3: 오케스트라 합주", "duration": "Part 09~20" },
+          { "label": "ACT 4 + 앙코르", "duration": "Part 21~27" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "완전체 — 파자마보스 시스템",
+        "items": [
+          "코딩 한 줄 없이 AI 마케팅 자동화 시스템 완성",
+          "비용 월 3만 원, 매주 4시간 절약",
+          "만들고, 기억하고, 발행하고, 개선하는 완전 자동 루프"
+        ]
+      }
+    }
+  ]
+}

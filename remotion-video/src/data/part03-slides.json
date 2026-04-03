@@ -1,0 +1,86 @@
+{
+  "partId": "part03",
+  "title": "터미널 공포증 완치 + Plan Mode",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 03",
+        "title": "터미널 공포증 완치 + Plan Mode"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🚪",
+        "keyword": "터미널 = 백스테이지 통로",
+        "description": "마우스 클릭은 정문, 터미널은 무대 뒤 직행 통로",
+        "accentWord": "백스테이지",
+        "analogy": "마우스로 3단계 → 터미널 한 줄이면 끝"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "터미널 5대 명령어",
+        "columns": 3,
+        "items": [
+          { "icon": "📍", "title": "pwd", "description": "지금 어디에 있지?" },
+          { "icon": "📂", "title": "ls / dir", "description": "이 복도에 뭐가 있지?" },
+          { "icon": "🚶", "title": "cd", "description": "저 방으로 이동!" },
+          { "icon": "📁", "title": "mkdir", "description": "새 방 만들기" },
+          { "icon": "🎛️", "title": "claude", "description": "음향 장비 켜기!" }
+        ]
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "Claude Code 내부 명령어",
+        "columns": 3,
+        "items": [
+          { "icon": "❓", "title": "/help", "description": "모든 버튼 설명서" },
+          { "icon": "🔄", "title": "/clear", "description": "대화 초기화" },
+          { "icon": "🤖", "title": "/model", "description": "AI 모델 변경" },
+          { "icon": "📋", "title": "/plan", "description": "리허설 모드" },
+          { "icon": "🚪", "title": "/quit", "description": "장비 끄기" }
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "Edit Mode (바로 본공연)",
+        "rightTitle": "Plan Mode (리허설 먼저)",
+        "leftItems": [
+          "Claude가 바로 파일 생성/수정",
+          "빠르지만 방향 이탈 위험",
+          "간단한 수정에 적합"
+        ],
+        "rightItems": [
+          "계획을 먼저 보여줌",
+          "승인 후 실행 시작",
+          "새 악기/복잡한 작업에 필수"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "핵심 정리",
+        "items": [
+          "터미널 명령어: pwd, dir, cd, mkdir, claude 5개면 충분",
+          "새로 만드는 작업은 Plan Mode로 리허설 먼저",
+          "실수해도 /rewind로 되돌리기 가능"
+        ]
+      }
+    }
+  ]
+}

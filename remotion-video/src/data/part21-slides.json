@@ -1,0 +1,68 @@
+{
+  "partId": "part21",
+  "title": "하네스 시스템 – 말이 강할수록 마구가 필요하다",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 21",
+        "title": "하네스 시스템 – 말이 강할수록 마구가 필요하다"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "하네스 엔지니어링 4기둥",
+        "steps": [
+          { "title": "컨텍스트 파일", "description": "CLAUDE.md, agents.md — AI의 행동 규칙서" },
+          { "title": "자동 강제 (Hooks)", "description": "저장 시 자동 품질 검사, 린터, 커밋 훅" },
+          { "title": "접근 경계", "description": "AI가 건드릴 수 있는 폴더/도구/명령어 범위 제한" },
+          { "title": "가비지 컬렉션", "description": "나쁜 패턴 자동 감지 + 정리" }
+        ]
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 2,
+        "heading": "퀄리티 게이트 예시",
+        "items": [
+          { "icon": "✂️", "title": "m-dash(—) 자동 제거" },
+          { "icon": "📏", "title": "플랫폼별 글자수 초과 검사" },
+          { "icon": "🚫", "title": "금지어 필터링" },
+          { "icon": "🔥", "title": "바이럴 스코어 8점 미만 → 자동 재작성" }
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "하네스 진화 사이클",
+        "nodes": [
+          { "label": "에이전트 실수", "icon": "⚠️" },
+          { "label": "새 규칙 추가", "icon": "📝" },
+          { "label": "하네스 강화", "icon": "🔒" },
+          { "label": "같은 실수 불가능", "icon": "✅" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 2
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "하네스 시스템 핵심 정리",
+        "items": [
+          "하네스 4기둥: 컨텍스트 파일, Hooks, 접근 경계, 가비지 컬렉션",
+          "퀄리티 게이트로 m-dash, 글자수, 금지어, 바이럴 스코어 자동 검증",
+          "프롬프트는 부탁, 하네스는 강제 — 실수하면 하네스를 고쳐라"
+        ]
+      }
+    }
+  ]
+}

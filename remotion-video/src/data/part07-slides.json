@@ -1,0 +1,67 @@
+{
+  "partId": "part07",
+  "title": "첫 번째 악기 – 소셜미디어 콘텐츠 자동화",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 07",
+        "title": "첫 번째 악기 – 소셜미디어 콘텐츠 자동화"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "에이전트",
+        "rightTitle": "스킬",
+        "leftItems": ["판단이 필요한 작업", "지휘자의 즉석 판단", "매번 다른 결과"],
+        "rightItems": ["반복 실행하는 작업", "악보에 적힌 연주법", "항상 동일한 형식·품질"],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "일반 ChatGPT",
+        "rightTitle": "Claude Code 스킬",
+        "leftItems": ["매번 긴 설명 입력", "처음부터 다시 설명", "퀄리티가 매번 달라짐"],
+        "rightItems": ["스킬 파일 한 번 만들면 끝", "/social-media 명령어 하나로 실행", "항상 동일한 퀄리티·형식"],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🎯",
+        "keyword": "95% 확신 질문 패턴",
+        "description": "스킬에 이 한 줄을 넣으면 AI가 추측 대신 먼저 확인하고 실행",
+        "accentWord": "95%"
+      }
+    },
+    {
+      "type": "code",
+      "durationInFrames": 150,
+      "props": {
+        "language": "markdown",
+        "code": "my-ai-marketing/\n├── CLAUDE.md           ← 총보\n└── .claude/\n    └── commands/       ← 악기 보관함\n        ├── social-media.md\n        ├── repurpose.md\n        └── seo-audit.md",
+        "caption": "스킬 파일 = .claude/commands/ 폴더에 마크다운 파일"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "첫 번째 악기(바이올린) 핵심 정리",
+        "items": [
+          "스킬은 한 번 만들면 계속 쓰는 악기 — .claude/commands/ 보관함에 저장",
+          "파일 만들고 /스킬이름으로 연주 — social-media.md → /social-media",
+          "결과물 피드백을 스킬 파일에 반영하면 다음부터 자동으로 개선"
+        ]
+      }
+    }
+  ]
+}

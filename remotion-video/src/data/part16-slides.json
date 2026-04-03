@@ -1,0 +1,76 @@
+{
+  "partId": "part16",
+  "title": "지휘자 세우기 – 오케스트레이터 구축",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 16",
+        "title": "지휘자 세우기 – 오케스트레이터 구축"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📄",
+        "keyword": "prompt.md = 공연 기획서",
+        "description": "오케스트레이터를 만들기 전에 기획서를 먼저 작성하면 퀄리티가 확 올라갑니다",
+        "accentWord": "기획서"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "prompt.md 기획서 패턴",
+        "steps": [
+          { "title": "목적", "description": "이 오케스트라가 해결할 문제" },
+          { "title": "단원 목록", "description": "어떤 에이전트를 어떤 순서로 호출할지" },
+          { "title": "입력", "description": "사용자가 뭘 넣는지 (URL? 주제? 키워드?)" },
+          { "title": "출력", "description": "최종 결과물 목록" },
+          { "title": "제약 조건", "description": "브랜드 보이스, 글자 수 제한 등" }
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "오케스트레이터 공연 순서",
+        "nodes": [
+          { "label": "서곡: 플래너 기획", "icon": "📋" },
+          { "label": "1악장: 리서치", "icon": "🔍" },
+          { "label": "2악장: 콘텐츠 생성", "icon": "✍️" },
+          { "label": "3악장: SEO 최적화", "icon": "📊" },
+          { "label": "4악장: 배포 준비", "icon": "📤" },
+          { "label": "앙코르: QA 검수", "icon": "🔎" }
+        ],
+        "direction": "vertical",
+        "accentIndex": 0
+      }
+    },
+    {
+      "type": "code",
+      "durationInFrames": 150,
+      "props": {
+        "language": "markdown",
+        "code": "## 에이전트 라우팅 규칙\n- 리서치/조사 → 리서치 에이전트\n- 콘텐츠 작성 → 콘텐츠 에이전트\n- SEO/키워드 → SEO 에이전트\n- 발행/배포 → 배포 에이전트\n- 전체 패키지 → /marketing-team",
+        "caption": "CLAUDE.md에 추가할 라우팅 규칙"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "오케스트레이터 핵심 정리",
+        "items": [
+          "prompt.md 기획서를 먼저 작성하면 일괄 생성 퀄리티가 올라감",
+          "/marketing-team [주제] 한 줄이면 전체 파이프라인 실행",
+          "CLAUDE.md 라우팅 규칙으로 작업별 에이전트 자동 선택"
+        ]
+      }
+    }
+  ]
+}

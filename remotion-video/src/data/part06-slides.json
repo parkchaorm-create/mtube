@@ -1,0 +1,65 @@
+{
+  "partId": "part06",
+  "title": "이미지·PDF + 툴 사용 – 악기의 특수 주법",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 06",
+        "title": "이미지·PDF + 툴 사용 – 악기의 특수 주법"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "이미지·PDF 넣는 방법 3가지",
+        "steps": [
+          { "title": "드래그앤드롭", "description": "터미널이나 채팅창에 파일을 끌어다 놓기" },
+          { "title": "@ 참조", "description": "@competitor-screenshot.png 형태로 파일 참조" },
+          { "title": "URL 입력", "description": "인터넷에 있는 이미지를 바로 입력" }
+        ]
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 2,
+        "heading": "툴 = 악기의 특수 주법",
+        "items": [
+          { "icon": "📖", "title": "Read", "description": "파일 읽기" },
+          { "icon": "✏️", "title": "Write", "description": "파일 만들기" },
+          { "icon": "🔧", "title": "Edit", "description": "파일 수정" },
+          { "icon": "💻", "title": "Bash", "description": "터미널 명령" },
+          { "icon": "🌐", "title": "WebFetch", "description": "웹페이지 읽기" },
+          { "icon": "🔍", "title": "Glob/Grep", "description": "파일·텍스트 검색" }
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "Allow",
+        "rightTitle": "Allow All",
+        "leftItems": ["이번 한 번만 OK", "처음엔 이걸로 구경"],
+        "rightItems": ["이 세션에서 계속 OK", "익숙해지면 사용"],
+        "accentSide": "left"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "이미지·PDF + 툴 핵심 정리",
+        "items": [
+          "이미지와 PDF는 드래그앤드롭이 가장 쉬움 — @파일명으로도 가능",
+          "툴은 악기의 특수 주법 — Claude Code가 알아서 선택, 외울 필요 없음",
+          "툴 허가 요청은 Allow/Deny로 관리 — 파일 삭제는 반드시 확인"
+        ]
+      }
+    }
+  ]
+}

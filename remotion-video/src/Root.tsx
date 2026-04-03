@@ -1,20 +1,16 @@
+import React from 'react';
 import { Composition } from 'remotion';
 import { MasterclassPreview } from './Composition';
 import { InfographicComposition } from './templates/InfographicComposition';
-import part00Slides from './data/part00-slides.json';
+import type { SlideData } from './templates/InfographicComposition';
 
 export const RemotionRoot: React.FC = () => {
-  const infographicDuration = part00Slides.slides.reduce(
-    (sum: number, s: { durationInFrames: number }) => sum + s.durationInFrames,
-    0
-  );
-
   return (
     <>
       <Composition
         id="Masterclass"
         component={MasterclassPreview}
-        durationInFrames={1800} // 30fps * 60s
+        durationInFrames={1800}
         fps={30}
         width={1920}
         height={1080}
@@ -26,12 +22,19 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Infographic"
         component={InfographicComposition}
-        durationInFrames={infographicDuration}
+        durationInFrames={300}
         fps={30}
         width={1920}
         height={1080}
         defaultProps={{
-          slides: part00Slides.slides,
+          slides: [] as SlideData[],
+        }}
+        calculateMetadata={async ({ props }) => {
+          const duration = props.slides.reduce(
+            (sum: number, s: SlideData) => sum + s.durationInFrames,
+            0
+          );
+          return { durationInFrames: duration || 300 };
         }}
       />
     </>

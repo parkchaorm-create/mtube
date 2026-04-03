@@ -1,0 +1,71 @@
+{
+  "partId": "part19",
+  "title": "리모션 영상 자동화 – 데이터만 넣으면 영상이 나온다",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 19",
+        "title": "리모션 영상 자동화 – 데이터만 넣으면 영상이 나온다"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "리모션 영상 자동화 워크플로우",
+        "nodes": [
+          { "label": "JSON 데이터 준비", "icon": "📝" },
+          { "label": "리모션 템플릿 변환", "icon": "🎬" },
+          { "label": "자동 렌더링", "icon": "⚙️" },
+          { "label": "MP4 영상 완성", "icon": "🎥" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 3
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "쇼츠",
+        "rightTitle": "리모션",
+        "leftItems": [
+          "기존 영상에서 하이라이트 잘라내기",
+          "편집 중심",
+          "URL 입력"
+        ],
+        "rightItems": [
+          "데이터로 새 영상 만들기",
+          "생성 중심",
+          "JSON 데이터 입력"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🔄",
+        "keyword": "무인 렌더링",
+        "description": "템플릿 1회 세팅 후 JSON 데이터만 바꾸면 새 영상이 무한으로 생성됩니다",
+        "accentWord": "무한",
+        "analogy": "악보(JSON)만 주면 오케스트라(리모션)가 알아서 연주해서 녹음(영상)까지"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "리모션 자동화 핵심 정리",
+        "items": [
+          "JSON(악보) → 리모션(오케스트라) → MP4(녹음 파일)",
+          "코드 작성 불필요, 데이터만 준비하면 됨",
+          "템플릿 1회 세팅 → JSON만 바꾸면 무한 영상 생성"
+        ]
+      }
+    }
+  ]
+}

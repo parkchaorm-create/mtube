@@ -1,0 +1,53 @@
+{
+  "partId": "part11",
+  "title": "GA4 분석 – 데이터 읽어주는 드럼",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 11",
+        "title": "GA4 분석 – 데이터 읽어주는 드럼"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "GA4에서 데이터 내보내기",
+        "steps": [
+          { "title": "1단계", "description": "GA4 접속 → 왼쪽 메뉴 '보고서' 클릭" },
+          { "title": "2단계", "description": "분석할 보고서 선택 (트래픽 개요 추천)" },
+          { "title": "3단계", "description": "오른쪽 상단 다운로드 아이콘 클릭" },
+          { "title": "4단계", "description": "CSV로 내보내기 → 프로젝트 폴더에 저장" }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "GA4 분석 순서",
+        "steps": [
+          { "title": "1단계: 데이터 개요", "description": "분석 기간, 지표, 이상치 체크" },
+          { "title": "2단계: 핵심 지표", "description": "방문자, 세션, 이탈률, 전환률 (전월 대비)" },
+          { "title": "3단계: 트래픽 소스", "description": "검색 vs 직접 vs 소셜 vs 추천 비율" },
+          { "title": "4단계: 콘텐츠 성과", "description": "TOP 10 인기 페이지, 이탈률 높은 페이지" },
+          { "title": "5단계: 실행 전략", "description": "놓치는 기회, 다음 달 집중 채널·콘텐츠" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "GA4 드럼 핵심 정리",
+        "items": [
+          "GA4에서 CSV 내보내기 후 프로젝트 폴더에 저장",
+          "/ga4 @파일명.csv로 연주하면 한국어 분석 + 다음 달 전략",
+          "데이터를 읽는 게 아니라 해석해주는 악기 — 마케팅 컨설턴트 대체"
+        ]
+      }
+    }
+  ]
+}

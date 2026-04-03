@@ -1,76 +1,50 @@
 {
   "partId": "part00",
-  "title": "오케스트라의 탄생",
+  "title": "오프닝 – 결과물 폭격 & 로드맵 선언",
   "slides": [
     {
       "type": "title",
       "durationInFrames": 90,
       "props": {
         "partNumber": "PART 00",
-        "title": "오케스트라의 탄생"
+        "title": "오프닝 – 결과물 폭격 & 로드맵 선언"
       }
     },
     {
       "type": "concept",
       "durationInFrames": 120,
       "props": {
-        "icon": "⌨️",
-        "keyword": "명령어 딱 한 줄",
-        "description": "결과물이 폭포처럼 쏟아지는 AI 자동화의 시작",
-        "accentWord": "한 줄"
+        "icon": "⏱️",
+        "keyword": "매주 15시간 → 10분",
+        "description": "직원 채용 없이, 에이전시 없이, 내 컴퓨터 안에 마케팅 팀이 생깁니다",
+        "accentWord": "10분"
       }
     },
     {
       "type": "progress",
       "durationInFrames": 150,
       "props": {
-        "currentAct": 1,
+        "currentAct": 0,
         "acts": [
-          { "label": "1막: 공연장 세팅", "duration": "1시간" },
-          { "label": "2막: 악보 읽기", "duration": "1시간" },
-          { "label": "3막: 악기 만들기", "duration": "1시간 30분" },
-          { "label": "4막: 오케스트라 합주", "duration": "1시간 30분" }
+          { "label": "ACT 1: 공연장 세팅", "duration": "Part 01~04" },
+          { "label": "ACT 2: 악보 마스터", "duration": "Part 05~08" },
+          { "label": "ACT 3: 악기 제작", "duration": "Part 09~15" },
+          { "label": "ACT 4: 오케스트라 합주", "duration": "Part 16~18" }
         ]
       }
     },
     {
-      "type": "comparison",
+      "type": "diagram",
       "durationInFrames": 150,
       "props": {
-        "leftTitle": "불필요",
-        "rightTitle": "필수",
-        "leftItems": [
-          "코딩 지식",
-          "개발 경험",
-          "영어 실력"
+        "nodes": [
+          { "label": "Claude Code", "icon": "🎛️" },
+          { "label": "스킬 5종 (악기)", "icon": "🎻" },
+          { "label": "오케스트레이터 (지휘자)", "icon": "🎼" },
+          { "label": "자동화 시스템", "icon": "⚡" }
         ],
-        "rightItems": [
-          "컴퓨터 (맥/윈도우)",
-          "Claude Pro 계정",
-          "안티그래비티"
-        ],
-        "accentSide": "right"
-      }
-    },
-    {
-      "type": "step",
-      "durationInFrames": 150,
-      "props": {
-        "heading": "준비물 체크리스트",
-        "steps": [
-          {
-            "title": "컴퓨터 (맥 또는 윈도우)",
-            "description": "어떤 컴퓨터든 상관없습니다"
-          },
-          {
-            "title": "Claude Pro 계정",
-            "description": "Claude Code 사용을 위한 구독"
-          },
-          {
-            "title": "안티그래비티",
-            "description": "Claude Code 전용 작업 도구"
-          }
-        ]
+        "direction": "horizontal",
+        "accentIndex": 0
       }
     },
     {
@@ -79,9 +53,9 @@
       "props": {
         "title": "핵심 정리",
         "items": [
-          "이 영상 하나로 '나만의 콘텐츠 마케팅 오케스트라' 완성",
-          "Claude Code 중심, 비싼 마케팅 툴 필요 없음",
-          "준비물: 컴퓨터 + Claude Pro 계정 + 안티그래비티"
+          "코딩 모르는 상경계 출신도 마케팅 자동화 가능",
+          "4막 구성: 세팅 → 악보 → 악기 → 합주",
+          "9명의 전문가 분석을 떠먹기만 하면 됨"
         ]
       }
     }

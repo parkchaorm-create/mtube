@@ -1,0 +1,59 @@
+{
+  "partId": "part05",
+  "title": "컨텍스트 & 토큰 – 지휘자 책상과 택시 미터기",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 05",
+        "title": "컨텍스트 & 토큰 – 지휘자 책상과 택시 미터기"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📚",
+        "keyword": "컨텍스트 윈도우",
+        "description": "지휘자 책상 크기 — 내가 한 말 + AI 답변 + 참고 파일 + CLAUDE.md 총보가 올라가고, 꽉 차면 오래된 내용부터 잊어버림",
+        "accentWord": "책상 크기",
+        "analogy": "지휘자의 책상"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🚕",
+        "keyword": "토큰 = 택시 미터기",
+        "description": "한국어 1글자 ≈ 2~3칸 / 영어 1단어 ≈ 1칸 — /clear로 미터기 리셋 + 필요한 파일만 참조 + Haiku 경차 활용",
+        "accentWord": "/clear",
+        "analogy": "택시 미터기"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "택시 등급",
+        "rightTitle": "용도",
+        "leftItems": ["Opus (리무진)", "Sonnet (일반택시)", "Haiku (경차)"],
+        "rightItems": ["복잡한 설계", "일상 콘텐츠", "반복 작업"],
+        "accentSide": "left"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "컨텍스트 & 토큰 핵심 정리",
+        "items": [
+          "컨텍스트 윈도우는 지휘자 책상 — 가득 차면 오래된 악보부터 잊어버림",
+          "/clear로 책상 청소 — 단, 먼저 요약을 받아둘 것",
+          "택시 등급 전략: Opus 리무진 + Sonnet 일반택시 + Haiku 경차"
+        ]
+      }
+    }
+  ]
+}

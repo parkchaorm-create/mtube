@@ -1,0 +1,56 @@
+{
+  "partId": "part18",
+  "title": "쇼츠 영상 자동 제작 – 영상 팀까지 완성",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 18",
+        "title": "쇼츠 영상 자동 제작 – 영상 팀까지 완성"
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "쇼츠 자동 제작 워크플로우",
+        "nodes": [
+          { "label": "유튜브 URL 입력", "icon": "🔗" },
+          { "label": "yt-dlp 영상 다운로드", "icon": "📦" },
+          { "label": "Whisper 자막 추출", "icon": "🗣️" },
+          { "label": "AI 하이라이트 선정", "icon": "🤖" },
+          { "label": "ffmpeg 쇼츠 편집", "icon": "✂️" },
+          { "label": "쇼츠 3개 완성", "icon": "🎬" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 5
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "3가지 핵심 도구",
+        "items": [
+          { "icon": "📦", "title": "yt-dlp", "description": "택배기사: 영상 다운로드" },
+          { "icon": "🗣️", "title": "Whisper", "description": "통역사: 음성 → 텍스트" },
+          { "icon": "✂️", "title": "ffmpeg", "description": "가위와 풀: 영상 편집" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "쇼츠 자동화 핵심 정리",
+        "items": [
+          "쇼츠 스킬: URL → 다운로드 → 자막 → 하이라이트 → 편집",
+          "yt-dlp(택배기사) + Whisper(통역사) + ffmpeg(가위와 풀)",
+          "URL 하나로 쇼츠 3개 자동 생성"
+        ]
+      }
+    }
+  ]
+}

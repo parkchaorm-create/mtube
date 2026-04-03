@@ -1,0 +1,107 @@
+{
+  "partId": "part04",
+  "title": "CLAUDE.md + Knowledge 폴더 – 총보 완성",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 04",
+        "title": "CLAUDE.md + Knowledge 폴더 – 총보 완성"
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "📜",
+        "keyword": "CLAUDE.md = 오케스트라 총보",
+        "description": "모든 악기의 악보가 한 권에 담긴 마스터 악보, AI가 자동으로 읽음",
+        "accentWord": "총보"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "총보 없음",
+        "rightTitle": "총보 있음",
+        "leftItems": [
+          "매번 브랜드 설명 필요",
+          "일반적/격식체 결과물",
+          "일관성 없는 연주"
+        ],
+        "rightItems": [
+          "자동으로 브랜드 이해",
+          "브랜드 톤에 맞는 결과물",
+          "딱 맞는 연주"
+        ],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "Knowledge 폴더 3종 세트",
+        "columns": 3,
+        "items": [
+          { "icon": "🎨", "title": "brand-identity.md", "description": "브랜드 정체성 (미션, 톤앤매너)" },
+          { "icon": "📱", "title": "platform-guidelines.md", "description": "플랫폼별 콘텐츠 가이드" },
+          { "icon": "🛍️", "title": "product-campaign.md", "description": "제품/캠페인 정보" }
+        ]
+      }
+    },
+    {
+      "type": "diagram",
+      "durationInFrames": 150,
+      "props": {
+        "nodes": [
+          { "label": "Claude Chat (기획실)", "icon": "💬" },
+          { "label": "전략·아이디어 확정", "icon": "📋" },
+          { "label": "Claude Code (시공현장)", "icon": "🔨" },
+          { "label": "파일 생성·실행", "icon": "✅" }
+        ],
+        "direction": "horizontal",
+        "accentIndex": 2
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "ACT 1 건강검진 체크리스트",
+        "steps": [
+          { "title": "claude --version ✅", "description": "Claude Code 설치 확인" },
+          { "title": "ls CLAUDE.md ✅", "description": "총보 파일 존재 확인" },
+          { "title": "ls knowledge/ ✅", "description": "Knowledge 3종 파일 확인" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "ACT 1 핵심 정리",
+        "items": [
+          "CLAUDE.md = 총보, AI가 우리 브랜드를 이해하는 핵심 파일",
+          "Knowledge 3종으로 브랜드·플랫폼·제품 정보 세팅",
+          "Claude Chat으로 기획, Claude Code로 빌드하면 효율 극대화"
+        ]
+      }
+    },
+    {
+      "type": "progress",
+      "durationInFrames": 150,
+      "props": {
+        "currentAct": 1,
+        "acts": [
+          { "label": "ACT 1: 공연장 세팅", "duration": "완료 ✅" },
+          { "label": "ACT 2: 악보 마스터", "duration": "다음 →" },
+          { "label": "ACT 3: 악기 제작", "duration": "" },
+          { "label": "ACT 4: 오케스트라 합주", "duration": "" }
+        ]
+      }
+    }
+  ]
+}

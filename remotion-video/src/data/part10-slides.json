@@ -1,0 +1,65 @@
+{
+  "partId": "part10",
+  "title": "SEO + GEO 감사 – 내 사이트 건강검진 트럼펫",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 10",
+        "title": "SEO + GEO 감사 – 내 사이트 건강검진 트럼펫"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "SEO + GEO 감사 = 내 사이트 건강검진",
+        "items": [
+          { "icon": "🏷️", "title": "메타 제목/설명", "description": "이름표가 달려있나?" },
+          { "icon": "🪧", "title": "H1 태그", "description": "간판이 보이나?" },
+          { "icon": "🖼️", "title": "이미지 alt", "description": "사진에 설명이 붙어있나?" },
+          { "icon": "🔑", "title": "키워드 밀도", "description": "핵심 단어가 자연스럽게?" },
+          { "icon": "🤖", "title": "GEO 정의 문장", "description": "X는 Y입니다 형태가 있나?" },
+          { "icon": "❓", "title": "Q&A 형식", "description": "AI가 인용하기 좋은 구조?" }
+        ]
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "SEO·GEO 감사 실행 순서",
+        "steps": [
+          { "title": "Step 1: 기술적 SEO", "description": "메타 태그, H1, 이미지 alt, URL 구조" },
+          { "title": "Step 2: 콘텐츠 SEO", "description": "콘텐츠 길이, 키워드 밀도, LSI 키워드" },
+          { "title": "Step 3: AI SEO (GEO)", "description": "정의 문장, Q&A 형식, 구조화 데이터" },
+          { "title": "Step 4: 경쟁사 비교", "description": "커버리지, 깊이, 놓친 주제 분석" }
+        ]
+      }
+    },
+    {
+      "type": "concept",
+      "durationInFrames": 120,
+      "props": {
+        "icon": "🎺",
+        "keyword": "GEO = AI 검색 최적화",
+        "description": "ChatGPT, Perplexity 같은 AI에게 내 콘텐츠가 인용되게 만드는 최신 기법",
+        "accentWord": "GEO"
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "SEO+GEO 트럼펫 핵심 정리",
+        "items": [
+          "/seo-audit [URL] [키워드]로 실행하면 사이트 건강검진 자동",
+          "빨간색부터 이번 주에 수정, 노란색은 이번 달에 잡기",
+          "GEO까지 체크 — AI 검색에서 내 사이트가 인용되는 최신 기법"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "partId": "part08",
+  "title": "브랜드 보이스 – 나를 AI로 클론하는 피아노",
+  "slides": [
+    {
+      "type": "title",
+      "durationInFrames": 90,
+      "props": {
+        "partNumber": "PART 08",
+        "title": "브랜드 보이스 – 나를 AI로 클론하는 피아노"
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "직접 작성",
+        "rightTitle": "대화형 추출",
+        "leftItems": ["내가 가이드 파일을 씀", "빠르지만 표면적", "내가 모르는 내 특징은 빠짐"],
+        "rightItems": ["Claude가 질문, 내가 대답", "깊이 있는 추출", "DNA 수준의 가이드"],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "step",
+      "durationInFrames": 150,
+      "props": {
+        "heading": "대화형 추출 질문 순서",
+        "steps": [
+          { "title": "1단계: 기본 정체성", "description": "브랜드 소개, 타겟 고객, 경쟁자 차별점" },
+          { "title": "2단계: 글쓰기 스타일", "description": "글 시작 방식, 호칭, 유머 수준, 금지 표현" },
+          { "title": "3단계: 톤 & 에너지", "description": "차분한 vs 열정적, 전문가 vs 친구" },
+          { "title": "4단계: 시그니처 확인", "description": "자주 쓰는 표현, 마무리 패턴" }
+        ]
+      }
+    },
+    {
+      "type": "comparison",
+      "durationInFrames": 150,
+      "props": {
+        "leftTitle": "AI 번역투",
+        "rightTitle": "자연스러운 표현",
+        "leftItems": ["~하는 것이 중요합니다", "다양한 방법이 있습니다", "효과적으로 활용할 수 있습니다"],
+        "rightItems": ["이거 진짜 중요합니다", "방법이 몇 가지 있거든요", "이렇게 쓰면 됩니다"],
+        "accentSide": "right"
+      }
+    },
+    {
+      "type": "grid",
+      "durationInFrames": 150,
+      "props": {
+        "columns": 3,
+        "heading": "데이터 패킷 = 전문성 뭉치",
+        "items": [
+          { "icon": "🧠", "title": "전문성 패킷", "description": "분야 지식, 경험, 사례" },
+          { "icon": "💰", "title": "오퍼 패킷", "description": "상품/서비스 정보, 가격" },
+          { "icon": "🔗", "title": "로직 패킷", "description": "사고방식, 프레임워크" }
+        ]
+      }
+    },
+    {
+      "type": "recap",
+      "durationInFrames": 150,
+      "props": {
+        "title": "브랜드 보이스(피아노) 핵심 정리",
+        "items": [
+          "대화형 추출로 DNA 수준의 브랜드 보이스를 뽑아냄",
+          "Humanize 프롬프트로 AI 번역투 제거 — 입으로 말할 수 있는 문장이 기준",
+          "데이터 패킷으로 전문성·오퍼·로직까지 저장하면 깊이와 일관성이 달라짐"
+        ]
+      }
+    }
+  ]
+}
