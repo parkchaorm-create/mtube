@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig, spring } from 'remotion';
 import { theme } from '../themes/dan-koe-theme';
 
 export interface ConceptSlideProps {
@@ -18,16 +18,34 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
   analogy,
 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
 
-  const opacity = interpolate(frame, [0, 25], [0, 1], {
-    extrapolateRight: 'clamp',
-  });
-  const slideUp = interpolate(frame, [0, 25], [30, 0], {
-    extrapolateRight: 'clamp',
-  });
-  const descOpacity = interpolate(frame, [15, 40], [0, 1], {
-    extrapolateRight: 'clamp',
-  });
+  // 아이콘: spring scale 바운스
+  const iconSpring = spring({ frame, fps, config: { damping: 10, stiffness: 200, mass: 0.5 } });
+  const iconScale = interpolate(iconSpring, [0, 1], [0, 1]);
+
+  // 키워드: spring 등장 (딜레이 10프레임)
+  const kwSpring = spring({ frame: frame - 10, fps, config: theme.animation.spring });
+  const kwOpacity = kwSpring;
+  const kwY = interpolate(kwSpring, [0, 1], [30, 0]);
+
+  // 강조 단어 펄스 (키워드 등장 완료 후)
+  const pulseFrame = 35;
+  const isPulse = accentWord && frame > pulseFrame && frame < pulseFrame + 20;
+  const pulseScale = isPulse
+    ? 1 + 0.08 * Math.sin(((frame - pulseFrame) / 20) * Math.PI)
+    : 1;
+  const pulseGlow = isPulse
+    ? Math.sin(((frame - pulseFrame) / 20) * Math.PI) * 0.6
+    : 0;
+
+  // 설명: spring 등장 (딜레이 25프레임)
+  const descSpring = spring({ frame: frame - 25, fps, config: theme.animation.springGentle });
+
+  // 비유: spring 등장 (딜레이 40프레임)
+  const analogySpring = analogy
+    ? spring({ frame: frame - 40, fps, config: theme.animation.springGentle })
+    : 0;
 
   const renderKeyword = () => {
     if (!accentWord) {
@@ -37,7 +55,18 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
     return (
       <>
         {parts[0]}
-        <span style={{ color: theme.colors.accent }}>{accentWord}</span>
+        <span
+          style={{
+            color: theme.colors.accent,
+            display: 'inline-block',
+            transform: `scale(${pulseScale})`,
+            textShadow: pulseGlow > 0
+              ? `0 0 ${30 * pulseGlow}px ${theme.animation.glowColor}`
+              : 'none',
+          }}
+        >
+          {accentWord}
+        </span>
         {parts.slice(1).join(accentWord)}
       </>
     );
@@ -57,8 +86,8 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
       {icon && (
         <div
           style={{
-            opacity,
-            fontSize: 64,
+            transform: `scale(${iconScale})`,
+            fontSize: 72,
             marginBottom: theme.spacing.gap,
           }}
         >
@@ -68,8 +97,8 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
 
       <h1
         style={{
-          opacity,
-          transform: `translateY(${slideUp}px)`,
+          opacity: kwOpacity,
+          transform: `translateY(${kwY}px)`,
           fontFamily: theme.fonts.title,
           fontSize: Math.max(28, theme.fontSizes.hero),
           fontWeight: theme.fontWeights.extraBold,
@@ -77,6 +106,7 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
           textAlign: 'center',
           margin: 0,
           marginBottom: theme.spacing.gap / 2,
+          letterSpacing: '-0.02em',
         }}
       >
         {renderKeyword()}
@@ -84,7 +114,8 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
 
       <p
         style={{
-          opacity: descOpacity,
+          opacity: descSpring,
+          transform: `translateY(${interpolate(descSpring, [0, 1], [20, 0])}px)`,
           fontFamily: theme.fonts.body,
           fontSize: Math.max(28, theme.fontSizes.subtitle),
           fontWeight: theme.fontWeights.regular,
@@ -101,9 +132,8 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
       {analogy && (
         <p
           style={{
-            opacity: interpolate(frame, [25, 50], [0, 1], {
-              extrapolateRight: 'clamp',
-            }),
+            opacity: analogySpring as number,
+            transform: `translateY(${interpolate(analogySpring as number, [0, 1], [15, 0])}px)`,
             fontFamily: theme.fonts.body,
             fontSize: Math.max(28, theme.fontSizes.body),
             fontWeight: theme.fontWeights.medium,
@@ -112,6 +142,7 @@ export const ConceptSlide: React.FC<ConceptSlideProps> = ({
             margin: 0,
             marginTop: theme.spacing.gap / 2,
             maxWidth: 900,
+            textShadow: `0 0 20px ${theme.animation.glowColor}`,
           }}
         >
           = {analogy}

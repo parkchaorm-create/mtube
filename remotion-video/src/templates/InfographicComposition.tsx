@@ -1,5 +1,5 @@
 import React from 'react';
-import { Series } from 'remotion';
+import { AbsoluteFill, Series, useCurrentFrame } from 'remotion';
 import { TitleSlide } from './TitleSlide';
 import { ConceptSlide } from './ConceptSlide';
 import { ProgressMap } from './ProgressMap';
@@ -9,6 +9,7 @@ import { RecapSlide } from './RecapSlide';
 import { CodeSlide } from './CodeSlide';
 import { DiagramSlide } from './DiagramSlide';
 import { GridSlide } from './GridSlide';
+import { slideTransition, vignetteStyle } from '../utils/animations';
 
 export interface SlideData {
   type: 'title' | 'concept' | 'progress' | 'comparison' | 'step' | 'recap' | 'code' | 'diagram' | 'grid';
@@ -45,14 +46,37 @@ const SlideRenderer: React.FC<{ slide: SlideData }> = ({ slide }) => {
   }
 };
 
+const SlideWithTransition: React.FC<{
+  slide: SlideData;
+}> = ({ slide }) => {
+  const frame = useCurrentFrame();
+  const { opacity, scale } = slideTransition(frame, slide.durationInFrames);
+
+  return (
+    <AbsoluteFill
+      style={{
+        opacity,
+        transform: `scale(${scale})`,
+      }}
+    >
+      <SlideRenderer slide={slide} />
+      <div style={vignetteStyle} />
+    </AbsoluteFill>
+  );
+};
+
 export const InfographicComposition: React.FC<InfographicProps> = ({
   slides,
 }) => {
   return (
     <Series>
       {slides.map((slide, index) => (
-        <Series.Sequence key={index} durationInFrames={slide.durationInFrames}>
-          <SlideRenderer slide={slide} />
+        <Series.Sequence
+          key={index}
+          durationInFrames={slide.durationInFrames}
+          offset={index > 0 ? -6 : 0}
+        >
+          <SlideWithTransition slide={slide} />
         </Series.Sequence>
       ))}
     </Series>

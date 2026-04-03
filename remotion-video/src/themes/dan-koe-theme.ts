@@ -30,4 +30,12 @@ export const theme = {
     gap: 40,
   },
   lineWidth: 1.5,
+  animation: {
+    spring: { damping: 12, stiffness: 180, mass: 0.8 },
+    springGentle: { damping: 18, stiffness: 120, mass: 1.0 },
+    stagger: 8,
+    fadeFrames: 9,
+    glowColor: 'rgba(229, 62, 62, 0.4)',
+    glowColorWhite: 'rgba(255, 255, 255, 0.15)',
+  },
 };
